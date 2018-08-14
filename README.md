@@ -5,6 +5,7 @@ A workshop for Hutch Explorers
 
 ## Workshop resources
 
+  - [Slides (PDF)](https://github.com/huddlej/workshop-2018-hutch-explorers/raw/master/tracking-viral-outbreaks-in-real-time.pdf)
   - [NCBI's Ebolavirus database](https://www.ncbi.nlm.nih.gov/genomes/VirusVariation/Database/nph-select.cgi?taxid=186536)
   - [Multiple sequence alignment viewer](http://msa.biojs.net/)
   - [Nextstrain](http://nextstrain.org)
