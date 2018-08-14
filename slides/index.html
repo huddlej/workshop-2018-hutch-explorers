@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Tracking viral outbreaks in real time</title>
+
+		<meta name="description" content="Tracking viral outbreaks in real time">
+		<meta name="author" content="John Huddleston">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Tracking viral outbreaks in real&nbsp;time</h1>
+					<p>
+                      John Huddleston<br />
+                      <a href="mailto:jlhudd@uw.edu">jlhudd@uw.edu</a>
+					</p>
+				</section>
+                <section>
+                    <h2>Why are we here?</h2>
+                    <ul>
+                        <li class="fragment"><strong>Connect</strong> the fields of programming and biology</li>
+                        <li class="fragment"><strong>Use</strong> real tools for computational biology</li>
+                        <li class="fragment"><strong>Explore</strong> patterns in virus evolution</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Who am I?</h2>
+                    <ul>
+                        <li>Ph.D. student in a virus evolution lab at the Fred Hutch</li>
+                        <li>Professional programmer for 8 years</li>
+                        <li>M.S. in computer science and biology</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Who are you?</h2>
+                    <ul>
+                        <li>Rising 10th and 11th grade students</li>
+                        <li>Programmers?</li>
+                        <li>Scientists?</li>
+                    </ul>
+                </section>
+				<section>
+					<h2>The plan for today</h2>
+                    <ol>
+                        <li>Introductions</li>
+                        <li>Reconstructing the Ebola outbreak with freely available tools</li>
+                        <li>Exploring the Ebola outbreak with Nextstrain</li>
+                    </ol>
+				</section>
+                <section>
+                    <h2>Outcomes for this workshop</h2>
+
+                    <p>At the end of this workshop you will know how to:</p>
+                    <ul>
+                        <li>Identify viral sequences from online databases</li>
+                        <li>Construct a multiple sequence alignment</li>
+                        <li>Build a phylogenetic tree</li>
+                        <li>Interpret ancestral relationships between organisms in a tree</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Origins of an outbreak</h2>
+
+                    <p><img src="figures/contagion.png" /></p>
+                </section>
+                <section>
+                    <h2>Questions we need to answer</h2>
+
+                    <ul>
+                      <li>What is the infectious unit?</li>
+                      <li>Where is the outbreak?</li>
+                      <li>How is it transmitted geographically?</li>
+                      <li>How is it transmitted between people?</li>
+                      <li>How is it evolving?</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Understanding the geographic origin of the outbreak</h2>
+
+                    <p><img src="figures/detailed-view-of-africa.png" width="50%" /></p>
+                </section>
+                <section>
+                    <h2>Understanding the animal origin of the outbreak</h2>
+
+                    <p class="fragment"><img src="figures/animal-origin-of-the-outbreak.png" /></p>
+                </section>
+                <section>
+                    <h2>Mutations can alter proteins</h2>
+
+                    <p><img src="figures/ebolavirus-proteins.jpg" width="50%" /></p>
+                </section>
+                <section>
+                    <h2>Mutations inform ancestral relationships</h2>
+
+                    <p><img src="figures/tree-of-life.png" width="38%" /></p>
+                </section>
+                <section>
+                    <h2>Build trees with online tools</h2>
+
+                    <p><a href="https://www.ncbi.nlm.nih.gov/genomes/VirusVariation/Database">https://www.ncbi.nlm.nih.gov/genomes/VirusVariation/Database</a></p>
+                    <p>Or, Google:</p>
+                    <code>ncbi virus variation database</code>
+                </section>
+                <section>
+                    <h2>Filter Ebola sequences</h2>
+
+                    <p><img src="figures/virus-variation-database-filters.png" /></p>
+                </section>
+				<section>
+					<h2>Align sequences</h2>
+                    <ol>
+                        <li>Build sequence alignment</li>
+                        <li>Browse alignment</li>
+                        <li>Download alignment ("Fasta plus gaps")</li>
+                        <li>View alignment at <a href="http://msa.biojs.net/app/">http://msa.biojs.net/app/</a></li>
+                    </ol>
+				</section>
+				<section>
+					<h2>Build a phylogenetic tree</h2>
+                    <ol>
+                        <li>Build phylogenetic tree</li>
+                        <li>Collapse view to "viewport"</li>
+                        <li>Explore patterns</li>
+                    </ol>
+				</section>
+                <section>
+                    <h2>Explore Ebola outbreak with Nextstrain</h2>
+
+                    <p><a href="https://nextstrain.org/ebola">https://nextstrain.org/ebola</a></p>
+
+                    <ul class="fragment">
+                        <li>Where did Ebola emerge? Where did it expand most rapidly?</li>
+	                    <li>When did the outbreak start?</li>
+	                    <li>What mutations were associated with the outbreak?</li>
+	                    <li>How does the mutation rate of Ebola compare to other viruses?</li>
+                    </ul>
+                </section>
+                <section>
+					<h2>Behind the scenes of Nextstrain</h2>
+
+                    <p><a href="https://github.com/nextstrain">https://github.com/nextstrain</a></p>
+                </section>
+				<section>
+					<h2>Closing thoughts</h2>
+
+                    <p class="fragment">Computational biology can provide insight into evolutionary processes happening in our lifetime</p>
+                    <p class="fragment">Many tools are available to everyone to use</p>
+                    <p class="fragment">You can contribute to the tools and/or the science</p>
+                </section>
+                <section>
+                    <h2>Thank you!</h2>
+
+                    <small>More at <a href="https://github.com/huddlej/workshop-2018-hutch-explorers">https://github.com/huddlej/workshop-2018-hutch-explorers</a></small>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
